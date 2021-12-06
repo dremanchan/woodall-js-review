@@ -192,6 +192,92 @@ for (let i = 10; i <= 100; i += 5) {
 
 for (let i in beverages){
     let beverage = beverages[i];
-    console.log(`I am drinking ${beverage)`);
+    console.log(`I am drinking ${beverage}`);
 }
+
+// while
+let forecast;
+while (forecast.windSpeed < 50) {
+    forecast = goAskTheWeatherService();
+}
+sendMessageToMortensenToStopTheCranes();
+
+let isGameRunning = true;
+while(isGameRunning) {
+    nextTick();
+}
+
+$('#stopButton').on('click', function()) {
+    isGameRunning = false;
+}
+
+/**
+ Functions!!!!
+*/
+
+function generateSong(words, notes) {
+    let song = `
+    ${words} ${words} ${words}
+    ${notes} ${notes} ${notes}`;
+
+    return song;
+
+}
+
+let mySong = generateSong( 'hey, hey, hey', 'C F G');
+console.log('check out my song', mySong);
+
+// Function Declaration
+// This is hoisted (you can call it from anywhere in the js file)
+function sum(n1, n2) {
+    return n1 + n2;
+}
+
+// Function Expression
+// Create an anonymous function
+// and assign it to a variable called sum
+let sum = function(n1, n2) {
+    return n1 + n2;
+}
+
+// anonymous function
+function(n1, n2) {
+    return n1 + n2;
+}
+
+function sayHell(
+    console.log('hell');
+)
+
+function callMeTwoTimes(fn) {
+    fn();
+    fn();
+}
+
+callMeTwoTimes(sayHell);
+
+// Common function in js
+// "Callback function"
+callMeTwoTimes(function) {
+    console.log('hell');
+}
+
+$('button').on('click', onButtonClick) {
+    console.log('stop clicking me');
+}
+
+function onButtonClick( {
+    console.log('stop ckicking me');
+})
+
+$(document).on('ready', onReady)
+
+
+function onReady(){
+    console.log(soReady);
+}
+
+$(document).on('ready', function() {
+    console.log('so ready');
+});
 
