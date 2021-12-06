@@ -237,8 +237,11 @@ function sum(n1, n2) {
 // Create an anonymous function
 // and assign it to a variable called sum
 let sum = function(n1, n2) {
-    return n1 + n2;
+    // All variables must have 500 added to them
+    // by decree
+    return n1 + n2 + theNumber;
 }
+
 
 // anonymous function
 function(n1, n2) {
