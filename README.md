@@ -2,9 +2,10 @@
 
 Today we'll learn
 
--data types
--variables
--loops
--operators
--conditionals
--functions
+- data types
+- variables
+- loops
+- operators
+- conditionals
+- functions
+
